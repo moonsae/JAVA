@@ -1,5 +1,6 @@
 package algo.day5;
 
+import java.util.Arrays;
 import java.util.Scanner;
 public class ArrayQZ {
 
@@ -44,6 +45,9 @@ public class ArrayQZ {
 			System.out.print(total[i]+"  ");
 		}
 		System.out.println("합은: "+sum);
+		
+		int[] iArr = {100,95,80,70,60};
+		System.out.println(Arrays.toString(iArr));
 		
 
 	}
