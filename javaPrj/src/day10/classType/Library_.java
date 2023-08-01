@@ -22,8 +22,8 @@ public class Library_ {
 		while(true) {
 			System.out.println("1. 전체 도서 목록 조회");
 		    System.out.println("2. 대출 가능 도서 목록 조회");
-		    System.out.println("3. 대출 실행");
-		    System.out.println("4. 반납 실행");
+		    System.out.println("3. 도서 대출 ");
+		    System.out.println("4. 도서 반납 ");
 		    System.out.println("0. 종료");
 		    System.out.print("메뉴 선택=> ");
 		    String menu_ = sc.nextLine();
@@ -113,10 +113,10 @@ class libraryMng{
 		
 	}
 	public String dc() {
-		return this.daechul;
+		return daechul;
 	}
 	public void dc_1(String a) {
-		this.daechul=a;
+		daechul=a;
 	}
 	
 	
