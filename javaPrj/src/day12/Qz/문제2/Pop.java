@@ -7,6 +7,7 @@ public class Pop extends Music{
 		
 	}
 
+	@Override
 	public String toString() {
 		return "타이틀: "+title+"\t가수: "+singer;
 	}

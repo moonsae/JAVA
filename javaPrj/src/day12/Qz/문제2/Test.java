@@ -6,10 +6,10 @@ public class Test {
 		// TODO Auto-generated method stub
 
 		Music[] music = new Music[5];
-		music[0]= new Kpop("Super Shy","NewJeans");
-		music[1]= new Kpop("Seven","정국");
-		music[2]= new Pop("A change of Heat","The 1975");
-		music[3]= new Pop("Let her go","Passenger");
+		music[0]= new Kpop("Super Shy","뉴진스");
+		music[1]= new Pop("A change of Heat","The 1975");
+		music[2]= new Pop("Let her go","Passenger");
+		music[3]= new Kpop("Seven","정국");
 		music[4]= new Pop("Hurricane","Cannons");
 		
 		for(int i=0; i<music.length; i++) {
