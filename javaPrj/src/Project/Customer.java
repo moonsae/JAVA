@@ -7,7 +7,6 @@ public class Customer{
 	private int totalCost;
 	private int totalPoint;
 	private Membership mmsh;
-	
 	public Customer() {}
 	
 	public Customer(String name, String address, String phone, int totalCost, int totalPoint, Membership mmsh) {
@@ -44,8 +43,9 @@ public class Customer{
 	public Membership getMmsh() {
 		return mmsh;
 	}
-
 	
+	
+ 
 	
 
 }

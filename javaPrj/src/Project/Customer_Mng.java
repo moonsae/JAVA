@@ -2,20 +2,26 @@ package Project;
 
 
 import java.util.ArrayList;
-
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Customer_Mng {
 	Scanner sc = new Scanner(System.in);
 	ArrayList<Customer> clist = new ArrayList<>();
+	int index=0;
+
 	public Customer_Mng() {}
 	public void init(Membership_Mng mm) { // 고객 정보 초기화
 		clist.add(new Customer("홍길동","경기도 양평군 양평읍", "010-4032-2222",32,2310,mm.FindMembership(32)));
 		clist.add(new Customer("고길동","경기도 시흥시 정왕동", "010-4444-3333",7,84,mm.FindMembership(7)));
-		clist.add(new Customer("김학생","서울특별시 마포구", "010-4568-4698",77,5560,mm.FindMembership(77)));
-		clist.add(new Customer("이학생","서울특별시 동대문구 ", "010-2248-5635",105,35810,mm.FindMembership(105)));
-		clist.add(new Customer("김학생","서울특별시 동대문구 ", "010-2248-5635",105,35810,mm.FindMembership(105)));
-		clist.add(new Customer("박학생","서울특별시 동대문구 ", "010-2248-5635",105,35810,mm.FindMembership(105)));
+		clist.add(new Customer("다길동","서울특별시 마포구", "010-4568-4698",77,5560,mm.FindMembership(77)));
+		clist.add(new Customer("나길동","서울특별시 동대문구 ", "010-2248-5635",105,35810,mm.FindMembership(105)));
+		clist.add(new Customer("가길동","서울특별시 동대문구 ", "010-1111-1111",110,35810,mm.FindMembership(110)));
+		clist.add(new Customer("라길동","서울특별시 동대문구 ", "010-2222-2222",80,35810,mm.FindMembership(80)));
+		clist.add(new Customer("마길동","서울특별시 동대문구 ", "010-3333-3333",36,35810,mm.FindMembership(36)));
+		clist.add(new Customer("바길동","서울특별시 동대문구 ", "010-4444-4444",250,35810,mm.FindMembership(250)));
+		clist.add(new Customer("사길동","서울특별시 동대문구 ", "010-5555-6666",7,35810,mm.FindMembership(7)));
+		
 		
 	}
 	public void printData() { // 고객 정보 조회(등급 정보까지 조회 가능)
@@ -47,6 +53,7 @@ public class Customer_Mng {
     			String pw = sc.nextLine();
     			if(clist.get(i).getPhone().equals(pw)) {
     				System.out.println("로그인 완료");
+    				break;
     			}
     			else {
     				System.out.println("비밀번호를 잘못입력했습니다. ");
@@ -69,6 +76,16 @@ public class Customer_Mng {
         }
     }
     
+    public void maxCost() {
+    	Collections.sort(clist, new CustomerComparator());
+    	for(int i=0; i<clist.size(); i++) {
+    		Customer c = clist.get(i);
+    		System.out.println(c);
+    	}
+    }
+   
+  
+
 }
 
 
