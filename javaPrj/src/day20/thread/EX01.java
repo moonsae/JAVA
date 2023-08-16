@@ -3,6 +3,7 @@ package day20.thread;
 public class EX01 {
 
 	public static void main(String[] args) {
+		/// 
 
 		R r = new R();
 		Thread t = new Thread(r);
