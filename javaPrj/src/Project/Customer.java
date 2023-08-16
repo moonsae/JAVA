@@ -8,7 +8,10 @@ public class Customer{
 	private int totalCost;
 	private int totalPoint;
 	private Membership mmsh;
+<<<<<<< HEAD
 	private YJOrder order;
+=======
+>>>>>>> branch 'master' of https://github.com/moonsae/JAVA.git
 	
 	public Customer() {}
 	
@@ -29,7 +32,11 @@ public class Customer{
 
 	@Override
 	public String toString() {
+<<<<<<< HEAD
 		return "회원(id = " + id + ", pw = " + pw + ", address=" + address + ", phone=" + phone + ", totalCost=" + totalCost
+=======
+		return "Customer [id=" + id + ", pw = " + pw + ", address=" + address + ", phone=" + phone + ", totalCost=" + totalCost
+>>>>>>> branch 'master' of https://github.com/moonsae/JAVA.git
 				+ ", totalPoint=" + totalPoint + ", mmsh=" + mmsh.getGrade() + "]";
 	}
 	
@@ -59,6 +66,7 @@ public class Customer{
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+<<<<<<< HEAD
 	public void setTotalCost(int totalCost) {
 		this.totalCost += totalCost;
 	}
@@ -72,6 +80,8 @@ public class Customer{
 		this.mmsh = mmsh;
 	}
 	
+=======
+>>>>>>> branch 'master' of https://github.com/moonsae/JAVA.git
 	
 	
  
